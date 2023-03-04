@@ -1,0 +1,11 @@
+.pai{
+    display: flex;
+    width: 80%;
+    background-color: aqua;
+    border: solid 2px black;
+}
+
+.caixa{
+    font-family: monospace;
+}
+
