@@ -1,4 +1,7 @@
 # PI-git
-Repositório feito para as entregas de Pesquisa e Inovação.
+Repositório feito para as entregas das atividade de Pesquisa e Inovação.
 
-A atividade: "Atividade - Aula 1 CSS" está neste  [repositório](./entrega-04-03-23)
+---
+### Lista para organização
+
+- [X] A atividade: "Atividade - Aula 1 CSS" está neste repositório: [Entrega-04-03-23](./entrega-04-03-23)
