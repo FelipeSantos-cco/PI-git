@@ -20,7 +20,7 @@
 }
 
 .titulo{
-    font-family: impact;
+    font-family: impact; /* Essa fonte substitui a monospace da class pai */
     color: rgb(25, 0, 66);
 }
 
