@@ -1,11 +1,30 @@
 .pai{
     display: flex;
+    flex-direction: column;
     width: 80%;
-    background-color: aqua;
+    height: 38%;
+    background-color: rgb(0, 255, 55);
     border: solid 2px black;
+    margin: auto;
+
+    font-family: monospace;
+    margin-bottom: 10px;
 }
 
 .caixa{
-    font-family: monospace;
+    background-color: rgb(255, 0, 234);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
 }
 
+.titulo{
+    font-family: impact;
+    color: rgb(25, 0, 66);
+}
+
+.corPadrao{
+    color: rgb(247, 1, 255);
+    font-size: 28px;
+}
