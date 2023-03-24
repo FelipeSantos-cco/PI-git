@@ -80,5 +80,6 @@ h1 {
 .container-desafio {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+    /*justify-content: left;*/
+    justify-content: flex-end; /*O row-reverse deixa tudo invertido*/
 }
