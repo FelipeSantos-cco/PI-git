@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Chart.JS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+        }
+
+        .grafico {
+            position: relative;
+            height: 40vh;
+            width: 50%;
+            padding: 2%;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="grafico">
+        <canvas id="canvas_graf_linhas"></canvas>
+    </div>
+
+    <div class="grafico">
+        <canvas id="canvas_graf_barras"></canvas>
+    </div>
+
+
+</body>
+
+<!--Início do gráfico de Linhas -->
+<script>
+    const graf_linhas = document.getElementById('canvas_graf_linhas');
+    new Chart(graf_linhas, {
+        type: 'line',
+        data: {
+            labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+            datasets: [{
+                label: 'Temperatura',
+                data: [30, 29, 28, 25, 22, 23],
+                fill: false,
+                borderColor: 'rgb(255, 0, 0)',
+                tension: 0.2
+            },
+            {
+                label: 'Umidade',
+                data: [80, 82, 80, 85, 80, 83],
+                fill: false,
+                borderColor: 'rgb(0, 0, 255)',
+                tension: 0.2
+            }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+<!--Fim do gráfico de Linhas-->
+
+<!--Início do gráfico de Barras-->
+<script>
+    const graf_barras = document.getElementById('canvas_graf_barras');
+
+    new Chart(graf_barras, {
+        type: 'bar',
+        data: {
+            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'junho'],
+            // Temperatura média
+            datasets: [{
+                label: 'Temperatura Média',
+                data: [22, 24, 27, 23, 20, 28],
+                borderWidth: 1,
+                backgroundColor: 'rgb(233, 49, 49)',
+            },
+            //Umidade Média
+            {
+                label: 'Umidade Média',
+                data: [90, 89, 93, 87, 88, 82],
+                borderWidth: 1,
+                backgroundColor: 'rgb(0, 102, 255)'
+            }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+</html>
